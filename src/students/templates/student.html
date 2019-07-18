@@ -1,0 +1,66 @@
+Student information
+<br/>
+
+<br/><Br/>
+<!-- <h2>Recent articles</h2>
+ -->
+{% for art in articles %}
+<p>
+	{{art.Title}} by {{art.Names}}
+</p>
+
+{% endfor %}
+
+<form action="" method="post">
+{% csrf_token %}
+
+<div class="form-left">
+
+			<label> First Name :</label>
+
+			<input type="text" name="fullName" placeholder="eg:George" #fullname required=""></input>
+
+		</div>
+		<p>
+
+		<div class="form-left">
+			<label> Second Name :</label>
+
+			<input type="text" name="secondname" placeholder="eg:Ngugi" #secondname required=""></input>
+
+		</div>
+		</p>
+
+		<p>
+
+		<div class="form-left">
+			 <label for="date">Date of Birth</label>
+        <input type="date" class="form-control" id="date"name="date">
+		
+		</div>
+		</p>
+
+		<p>
+
+		<div class="form-left">
+			<label> Admin Number :</label>
+
+			<input type="text" name="admin_no" placeholder="11111" #admin_no required=""></input>
+
+		</div>
+		</p>
+		<p>
+
+		<div class="form-left">
+			<label> Telephone :</label>
+
+			<input type="text" name="telephone" placeholder="0710123456" #telephone required=""></input>
+
+		</div>
+		</p>
+
+<!-- <script src="student.js"></script> -->
+
+
+<button type="submit">Send now</button>
+
